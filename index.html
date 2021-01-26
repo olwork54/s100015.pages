@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFFER LEADER</title>
+    <script>
+        (function () {
+            let userLang = '';
+            if (localStorage.getItem('userLang')) {
+                userLang = localStorage.getItem('userLang');
+            } else {
+                userLang = navigator.language || navigator.userLanguage;
+                localStorage.setItem('userLang', userLang);
+            }
+            if (userLang === 'ru-RU') window.location.assign('ru.html');
+        })();
+    </script>
+
+    <link rel="icon" type="image/png" href="./img/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="./img/favicon-192x192.png" />
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css?v=1.2">
+
+    <script src="./js/lazysizes.min.js" async=""></script>
+
+</head>
+
+<body>
+
+    <div id="preloader" class="show">
+        <img class="logo show" src="./img/logo-mini.png" alt="">
+    </div>
+
+    <div id="overlay-menu" class="overlay-menu">
+        <div class="container">
+            <a id="close-menu-btn" class="close-btn">
+                <img src="./img/close-btn.png" alt="">
+            </a>
+            <ul>
+                <li class="desktop-hidden"><a href="https://offerleader.com/register">Sign up</a></li>
+                <li class="desktop-hidden controls"><a href="https://offerleader.com/login">Log in</a></li>
+                <li><a href="https://blog.offerleader.com/" target="_blank">Blog</a></li>
+                <li><a href="#about-us">About</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li class="mobile-hidden"><a href="#our-offers">Our Offers</a></li>
+                <li><a href="#top-offers">Top Offers</a></li>
+                <li><a href="#reviews">Feedback</a></li>
+                <li><a href="#managers">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="content-wrapper" class="content-wrapper">
+
+        <div id="header" class="header">
+            <div class="container">
+                <div class="header__menu-bar">
+                    <a class="header__logo">
+                        <img src="./img/logo.png" alt="logo">
+                    </a>
+                    <div class="right-side">
+                        <div class="lang-changer">
+                            <span class="lang" data-lang="ru-RU">RU</span><span class="lang" data-lang="en-US">EN</span>
+                        </div>
+                        <div class="header__login-contols">
+                            <a href="https://offerleader.com/login">Log in</a><span>/</span><a
+                                href="https://offerleader.com/register">Sign up</a>
+                        </div>
+                        <div class="header-blog">
+                            <a href="https://blog.offerleader.com/" target="_blank">Blog</a>
+                        </div>
+                        <div class="header__menu-section">
+                            <a id="open-menu-btn">
+                                <span class="desktop-menu-icon">Menu</span>
+                                <span class="mobile-menu-icon">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <h1 class="header__title">
+                    What others will test tomorrow,<br> we run now!
+                </h1>
+
+                <a href="#about-us" class="more-arrow">
+                    <img src="./img/more-icon.png" alt="more-icon">
+                </a>
+
+            </div>
+        </div>
+
+        <div id="about-us" class="about-us">
+            <div class="container">
+                <div class="text-box left">
+                    <h3>Who we are?</h3>
+                    <p>
+                        one of the fastest-growing affiliate networks based on CPA model.
+                    </p>
+                </div>
+                <img class="lazyload" data-src="./img/symbol.png" alt="symbol">
+                <div class="text-box right">
+                    <h3>What is our strong point?</h3>
+                    <p>
+                        we know how to increase revenue and profit for media buyers with the most competitive tools.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="benefits" class="benefits">
+            <div class="container">
+                <h2 class="section-title">Our benefits</h2>
+                <div class="benefit-item item-1">
+                    <div class="num">01</div>
+                    <h3 class="title">Only tested offers</h3>
+                    <p>
+                        We have only tested and approved by media buyers offers, that shows good and stable results,
+                        makes
+                        high ROI, on all verticals we work.
+
+                    </p>
+                </div>
+
+                <div class="benefit-item item-2">
+                    <div class="num">02</div>
+                    <h3 class="title">Experience with your traffic source</h3>
+                    <p>
+                        We have huge media buying experience.
+                        We show the working approaches of the marketing funnel, suggest hypotheses that convert better.
+                        We
+                        give metrics what the expected CR will be.
+                    </p>
+                </div>
+
+                <div class="benefit-item item-3">
+                    <div class="num">03</div>
+                    <h3 class="title">Strong support team</h3>
+                    <p>
+                        An individual approach to each partner is important for us. <br>
+                        Your personal manager will help you to scale campaigns and increase your ROI.
+                    </p>
+                </div>
+
+                <div class="benefit-item item-4">
+                    <div class="num">04</div>
+                    <h3 class="title">FB integration</h3>
+                    <p>
+                        All offers are optimized for FB traffic, <br> and work with FB Pixel.
+                    </p>
+                </div>
+
+                <div class="benefit-item item-5">
+                    <div class="num">05</div>
+                    <h3 class="title">Telegram bot</h3>
+                    <p>
+                        Control and management of advertising campaigns, changing the terms of the offer, caps, etc.
+                    </p>
+                </div>
+
+                <div class="benefit-item item-6">
+                    <div class="num">06</div>
+                    <h3 class="title">No hold</h3>
+                    <p>
+                        Our company is based on trust, and strong partnerships. Therefore, after the first hold for 7
+                        days,
+                        we make payments every day upon request. This makes possible to run big revenue on short time.
+                    </p>
+                </div>
+
+
+                <div class="benefit-item item-7">
+                    <div class="num">07</div>
+                    <h3 class="title">Advanced partnership</h3>
+                    <p>
+                        Own apps, accounts and cloack on long-term partnership.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="our-offers" class="our-offers">
+            <div class="container map-container">
+                <h2>Offers all over the world</h2>
+                <div id="map-block" class="map-block" style="width: 844px; height: 520px;"></div>
+            </div>
+        </div>
+
+        <div id="top-offers" class="top-offers">
+            <div class="container">
+                <h2>Top offers</h2>
+                <div id="top-offers__category-block" class="category-blok">
+
+                    <div class="category-item">
+                        <img class="lazyload" data-src="./img/category-icon-keto.png" alt="keto" class="category-icon">
+                        <br>
+                        <img src="./img/more-icon.png" alt="" class="more-icon">
+                        <p>
+                            Popular brand of diet pills now on CPA, with the best mids and top CR. Top GEOs: Canada,
+                            Australia, New Zealand, France, Brazil and Latam. Ask your manager for fresh EPC top.
+                        </p>
+                    </div>
+
+                    <div class="category-item">
+                        <img class="lazyload" data-src="./img/category-icon-cbd.png" alt="keto" class="category-icon">
+                        <br>
+                        <img src="./img/more-icon.png" alt="" class="more-icon">
+                        <p>
+                            Cannabis on fire. New offer that shows great results, top discussed articles on Tier-1 and
+                            Europe countries. High EPC, high CTR, all that we love.
+                        </p>
+                    </div>
+
+                    <div class="category-item">
+                        <img class="lazyload" data-src="./img/category-icon-casino.png" alt="keto"
+                            class="category-icon">
+                        <br>
+                        <img src="./img/more-icon.png" alt="" class="more-icon">
+                        <p>
+                            The most converting online casinos and the most popular slots. Own apps.
+                        </p>
+                    </div>
+
+                    <div class="category-item">
+                        <img class="lazyload" data-src="./img/category-icon-adult.png" alt="keto" class="category-icon">
+                        <br>
+                        <img src="./img/more-icon.png" alt="" class="more-icon">
+                        <p>
+                            Old good adult offers. We selected for You stable and high converting offers for adult
+                            nutra.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="our-partners" class="our-partners">
+            <div class="container">
+                <h2>Our partners</h2>
+                <div class="partner-list">
+                    <div class="item">
+                        <img class="lazyload" data-src="./img/partner-icon-keitaro.png" alt="keitaro">
+                    </div>
+                    <div class="item">
+                        <img class="lazyload" data-src="./img/partner-icon-binom.png" alt="binom">
+                    </div>
+                    <div class="item">
+                        <img class="lazyload" data-src="./img/partner-icon-admobispy.png" alt="admobispy">
+                    </div>
+                    <div class="item">
+                        <img class="lazyload" data-src="./img/partner-icon-spyover.png" alt="spyover">
+                    </div>
+                    <div class="item">
+                        <img class="lazyload" data-src="./img/partner-icon-dolphin.png" alt="dolphin">
+                    </div>
+                    <div class="item">
+                        <img class="lazyload" data-src="./img/partner-icon-proxisellers.png" alt="proxisellers">
+                    </div>
+                    <div class="item">
+                        <img class="lazyload" data-src="./img/partner-icon-adspect.png" alt="adspect">
+                    </div>
+                    <div class="item">
+                        <img class="lazyload" data-src="./img/partner-icon-adsbridge.png" alt="adsbridge">
+                    </div>
+                    <div class="item">
+                        <img class="lazyload" data-src="./img/partner-icon-bim.png" alt="bim">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="reviews" class="reviews">
+            <div class="container">
+                <h3>What clients say about us</h3>
+                <div id="review-slider">
+                    <div class="slides">
+
+                        <div class="slide">
+                            <p>
+                                I have been working with this network since 2019, they have proven themselves well. I
+                                found
+                                interesting offers with good rates that were not available in other affiliate programs.
+                                The
+                                guys always make concessions, bumps, help with the funnels, starting from fresh
+                                creatives
+                                and text that really works and pre-lending pages. There were no problems with payments
+                                at
+                                all, everything was on time and even sometimes ahead of schedule for wallets /
+                                currencies
+                                convenient for me
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <p>
+                                I worked a lot with affiliate programs, both gambling and nutra. And I can say that this
+                                is
+                                one of the best network (or may be the best). New offers, great bumping, the best
+                                support
+                                and early payments even on gambling!
+                            </p>
+                        </div>
+
+                        <div class="slide">
+                            <p>
+                                I have been working with guys for about 6 months. I can only note the positive aspects
+                                of
+                                the work - the rates are good, there are bumps, payments on request. For me as a solo
+                                affiliate, this is the main thing, so I RECOMMEND. <br> Profit for everyone!
+                            </p>
+                        </div>
+
+                        <div class="slide">
+                            <p>
+                                I usually work with nutra for Europe. Due to the beginning of quarantine, the approval
+                                of
+                                the COD has dropped significantly and I was looking for something else to try in order
+                                to
+                                earn at least something. The guys offered excellent offers for Tier1, as they have the
+                                best
+                                in this flow. Manager gave me prelanding and creatives. After a few days of the test, it
+                                turned out to be a plus. I definitely recommend!
+                            </p>
+                        </div>
+
+                        <div class="slide">
+                            <p>
+                                The interface is simple, convenient, cool. Manager is a nice person, you can joke and
+                                laugh.
+                                The POs’ are fire, high enough, I did not expect that there will even be such. You can
+                                safely ask for a boost. Payments: they pay without problems, they have 4 payment
+                                methods, it
+                                seems, I use WMZ and there are no problems. In general, a very good network, I like it.
+                                We
+                                will work further and make a profit together. I definitely recommend!
+                            </p>
+                        </div>
+
+                        <div class="controls">
+                            <span class="prev-btn">
+                                <img src="./img/slider-arrow-left.png" alt="prev-btn">
+                            </span>
+                            <span class="next-btn">
+                                <img src="./img/slider-arrow-right.png" alt="next-btn">
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="progress"><span class='indication'></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="managers" class="managers">
+            <div class="container">
+                <h2>Managers</h2>
+                <div id="manger-slider" class="manger-slider">
+                    <div class="ring_gallery">
+
+                        <div class="slide">
+                            <div class="manager_photo">
+                                <img class="lazyload" data-src="./img/manager-Katya.jpg" alt="">
+                            </div>
+                            <div class="mager-info">
+                                <h3 class="name">Kate</h3>
+                                <h4 class="credo">
+                                    “Your environment determines your future”
+                                </h4>
+                                <p>kurasooova@gmail.com</p>
+                                <p>skype: kurasooova</p>
+                                <p>telegram: @katyaonlybusiness</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="manager_photo">
+                                <img class="lazyload" data-src="./img/manager-Nikolay.jpg" alt="">
+                            </div>
+                            <div class="mager-info">
+                                <h3 class="name">Nik</h3>
+                                <h4 class="credo">
+                                    “Lock, stock and 2 smoking leads. Gambling guru.”
+                                </h4>
+                                <p>cheter2010@gmail.com</p>
+                                <p>skype: zakharchenkonikoolay</p>
+                                <p>telegram: @NikolayZakharchenko</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="manager_photo">
+                                <img class="lazyload" data-src="./img/manager-Nastya.jpg" alt="">
+                            </div>
+                            <div class="mager-info">
+                                <h3 class="name">Anastasiia</h3>
+                                <h4 class="credo">
+                                    “5-star Hilton? Not bad. But wait till you see your stats on our network”
+                                </h4>
+                                <p>lebedinskaya.srt@gmail.com</p>
+                                <p>skype: 542ba2ca2677505c</p>
+                                <p>telegram: @muse_Stasy</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="manager_photo">
+                                <img class="lazyload" data-src="./img/manager-Ira.jpg" alt="">
+                            </div>
+                            <div class="mager-info">
+                                <h3 class="name">Irina</h3>
+                                <h4 class="credo">
+                                    “Million dollar baby, can you handle?”
+                                </h4>
+                                <p>fedorchuk230@gmail.com</p>
+                                <p>skype: cid.ca97e66cf3bee9e6</p>
+                                <p>telegram: @zalevskaaa</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="manager_photo">
+                                <img class="lazyload" data-src="./img/manager-Valerii.jpg" alt="">
+                            </div>
+                            <div class="mager-info">
+                                <h3 class="name">Valerii</h3>
+                                <h4 class="credo">
+                                    “The best way to ruin your relationship with your partner is to start sorting it
+                                    out”
+                                </h4>
+                                <p>Eva.ipad21@gmail.com</p>
+                                <p>skype:live:3b393dfe492204ed</p>
+                                <p>telegram: @eva200162</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="manager_photo">
+                                <img class="lazyload" data-src="./img/manager-Lera.jpg" alt="">
+                            </div>
+                            <div class="mager-info">
+                                <h3 class="name">Lera</h3>
+                                <h4 class="credo">
+                                    “I came into this world to be your affiliate mom.”
+                                </h4>
+                                <p>krasnopolskayalera@gmail.com</p>
+                                <p>Skype valeri-sami</p>
+                                <p>telegram: @rebsw</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="controls">
+                        <div class="progress"><span class='indication'></span></div>
+                        <span class="prev-btn">
+                            <img src="./img/slider-arrow-up.png" alt="prev-btn">
+                        </span>
+                        <span class="next-btn">
+                            <img src="./img/slider-arrow-down.png" alt="next-btn">
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="logo-info">
+                    <div class="logo">
+                        <a href="#header">
+                            <img class="lazyload" data-src="./img/gray-logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            Copyright 2018 by Offerleader. All rights Reserved
+                        </p>
+                        <p>
+                            Offerleader – part of the Lead Digital Group Holding
+                        </p>
+                    </div>
+                </div>
+
+                <div class="social">
+                    <a href="https://www.instagram.com/offerleader_network/" target="_blank">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" viewBox="0 0 512 512"
+                            xml:space="preserve">
+                            <path
+                                d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0" />
+                            <path
+                                d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0" />
+                            <path
+                                d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/offerleader" target="_blank">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" viewBox="0 0 512 512" 
+                            xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M448,0H64C28.704,0,0,28.704,0,64v384c0,35.296,28.704,64,64,64h192V336h-64v-80h64v-64c0-53.024,42.976-96,96-96h64v80
+                               h-32c-17.664,0-32-1.664-32,16v64h80l-32,80h-48v176h96c35.296,0,64-28.704,64-64V64C512,28.704,483.296,0,448,0z" />
+                                </g>
+                            </g>
+                        </svg></a>
+                    <a href="mailto:offerleader.info@gmail.com" target="_blank">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                         xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M467,61H45C20.218,61,0,81.196,0,106v300c0,24.72,20.128,45,45,45h422c24.72,0,45-20.128,45-45V106
+                               C512,81.28,491.872,61,467,61z M460.786,91L256.954,294.833L51.359,91H460.786z M30,399.788V112.069l144.479,143.24L30,399.788z
+                                M51.213,421l144.57-144.57l50.657,50.222c5.864,5.814,15.327,5.795,21.167-0.046L317,277.213L460.787,421H51.213z M482,399.787
+                               L338.213,256L482,112.212V399.787z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="back-btn">
+                    <a id="back-btn" href="#header">
+                        <img src="./img/back-btn.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./js/main.js"></script>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.svgworldmap-2.1.min.js"></script>
+    <script src="./js/maps-settings.js"></script>
+
+</body>
+
+</html>
